@@ -1,0 +1,158 @@
+body {
+	margin: 0;
+	font-family: "Arial", sans-serif;
+	color: #333;
+	background-color: #f8f8f8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.app {
+	max-width: 600px;
+	width: 90%;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+header {
+	background: #007bff;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 24px;
+}
+
+header p {
+	margin: 5px 0 0;
+	font-size: 14px;
+}
+
+main {
+	padding: 20px;
+}
+
+.upload-section {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.file-input {
+	margin-bottom: 10px;
+	padding: 10px;
+	font-size: 14px;
+	width: 100%;
+	max-width: 300px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.upload-button {
+	margin: 20px;
+	padding: 10px 20px;
+	background: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.upload-button:disabled {
+	background: #cccccc;
+	cursor: not-allowed;
+}
+
+.upload-button:hover:not(:disabled) {
+	background: #0056b3;
+}
+
+.error-message {
+	color: red;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.preview-section {
+	margin-top: 20px;
+	width: 320px;
+	height: 200px;
+	overflow: auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+
+.file-preview {
+	margin-bottom: 20px;
+	padding: 2px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: #ffffff;
+}
+
+.file-preview h3 {
+	margin: 0 0 10px;
+	font-size: 16px;
+	color: #f70d0d;
+}
+
+.file-preview pre {
+	font-size: 14px;
+	color: #555;
+	background: #f4f4f4;
+	padding: 10px;
+	border-radius: 4px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+footer {
+	background: #f1f1f1;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 12px;
+	color: #777;
+}
+
+footer p {
+	margin: 0;
+}
+
+.drag-drop-area {
+	border: 2px dashed #ccc;
+	border-radius: 10px;
+	padding: 30px;
+	text-align: center;
+	background-color: #f9f9f9;
+	color: #555;
+	transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+	cursor: pointer;
+}
+
+.drag-drop-area:hover {
+	border-color: #007bff;
+	background-color: #eaf4ff;
+	color: #007bff;
+}
+
+.drag-drop-area p {
+	font-size: 16px;
+	margin: 0;
+}
+
+.success-message {
+	color: green;
+	font-size: 14px;
+	margin-top: 10px;
+}
