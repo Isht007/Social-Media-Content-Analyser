@@ -44,7 +44,7 @@ const App = () => {
 
 		try {
 			const response = await axios.post(
-				"http://localhost:8080/api/files/upload",
+				"https://social-media-content-analyser-server.onrender.com/api/files/upload",
 				formData,
 				{
 					headers: { "Content-Type": "multipart/form-data" },
