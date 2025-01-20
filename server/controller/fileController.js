@@ -12,7 +12,7 @@ const processFile = async (file) => {
 	if (extension === ".jpeg" || extension === ".png" || extension === ".jpg") {
 		try {
 			const result = await Tesseract.recognize(filename);
-			console.log(result.data.text);
+			//	console.log(result.data.text);
 			extractedText = result.data.text;
 			if (!extractedText.trim()) {
 				throw new Error(
